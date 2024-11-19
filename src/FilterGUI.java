@@ -3,12 +3,12 @@ import java.awt.*;
 import java.awt.event.ActionListener;
 
 public class FilterGUI extends JFrame {
-    private JTextArea originalTextArea;
-    private JTextArea filteredTextArea;
-    private JTextField searchField;
-    private JButton loadButton;
-    private JButton searchButton;
-    private JButton quitButton;
+    private final JTextArea originalTextArea;
+    private final JTextArea filteredTextArea;
+    private final JTextField searchField;
+    private final JButton loadButton;
+    private final JButton searchButton;
+    private final JButton quitButton;
 
     public FilterGUI() {
         setTitle("Filter GUI");

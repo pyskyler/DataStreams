@@ -4,9 +4,12 @@ import java.io.IOException;
 
 public class FilterController {
     private FilterGUI gui;
-    private FilterController filter;
+    private Filter filter;
 
     public FilterController(FilterGUI gui, Filter filter) {
+
+        this.gui = gui;
+        this.filter = filter;
 
         gui.setQuitButton(e -> System.exit(0));
 
