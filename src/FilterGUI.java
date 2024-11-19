@@ -38,10 +38,12 @@ public class FilterGUI extends JFrame {
         JPanel centerPanel = new JPanel(new GridLayout(1, 2));
 
         originalTextArea = new JTextArea(20, 30);
+        originalTextArea.setLineWrap(true);
         JScrollPane originalScrollPane = new JScrollPane(originalTextArea);
         centerPanel.add(originalScrollPane);
 
         filteredTextArea = new JTextArea(20, 30);
+        filteredTextArea.setLineWrap(true);
         JScrollPane filteredScrollPane = new JScrollPane(filteredTextArea);
         centerPanel.add(filteredScrollPane);
 
